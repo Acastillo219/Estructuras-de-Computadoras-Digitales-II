@@ -25,6 +25,6 @@ with gzip.open(options.TRACE_FILE, 'rt') as trace_fh:
         # i += 1
         # if i == 25:
         #     break
-
+cache.imprimir_info()
 cache.imprimir_estadisticas()
 
