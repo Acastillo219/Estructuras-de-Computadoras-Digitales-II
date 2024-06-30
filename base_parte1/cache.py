@@ -27,7 +27,7 @@ class Cache:
         print("\tPolítica de Reemplazo:\t\t" + str(self.politica_reemplazo))
     
     def imprimir_estadisticas(self):
-        print("Resultados de la simulación")
+        #print("Resultados de la simulación")
         porcentaje_fallos = (100.0 * self.total_fallos) / self.total_accesos
         porcentaje_fallos = "{:.3f}".format(porcentaje_fallos)
         porcentaje_fallos_lectura = (100.0 * self.total_fallos_lectura) / self.total_lecturas
@@ -35,12 +35,13 @@ class Cache:
         porcentaje_fallos_escritura = (100.0 * self.total_fallos_escritura) / self.total_escrituras
         porcentaje_fallos_escritura = "{:.3f}".format(porcentaje_fallos_escritura)
 
-        print("Total de fallos: ", self.total_fallos)
-        print("Porcentaje de fallos: ", porcentaje_fallos, "%")
-        print("Total de fallos de lectura: ", self.total_fallos_lectura)
-        print("Porcentaje de fallos de lectura: ", porcentaje_fallos_lectura, "%")
-        print("Total de fallos de escritura: ", self.total_fallos_escritura)
-        print("Porcentaje de fallos de escritura: ", porcentaje_fallos_escritura, "%")
+        print(f"Cantidad total de misses: {self.total_fallos}, Miss rate total: {porcentaje_fallos}")
+        #print("Total de fallos: ", self.total_fallos)
+        #print("Porcentaje de fallos: ", porcentaje_fallos, "%")
+        #print("Total de fallos de lectura: ", self.total_fallos_lectura)
+        #print("Porcentaje de fallos de lectura: ", porcentaje_fallos_lectura, "%")
+        #print("Total de fallos de escritura: ", self.total_fallos_escritura)
+        #print("Porcentaje de fallos de escritura: ", porcentaje_fallos_escritura, "%")
 
     
     def acceso(self, tipo_acceso, direccion):
