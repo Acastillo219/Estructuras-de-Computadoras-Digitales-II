@@ -1,7 +1,5 @@
 from math import log2, floor
 
-from math import log2, floor
-
 class Cache:
     def __init__(self, capacidad_cache, asociatividad_cache, tamano_bloque, politica_reemplazo):
         self.total_accesos = 0
