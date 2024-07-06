@@ -33,7 +33,7 @@ with gzip.open(options.TRACE_FILE, 'rt') as trace_fh:
         #     break
 
 # Imprimir información y estadísticas de la caché
-cache.imprimir_info()
+# cache.imprimir_info()
 cache.imprimir_estadisticas()
 
 
