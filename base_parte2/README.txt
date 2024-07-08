@@ -21,7 +21,7 @@ python cache_sim.py --l1_s 32 --l1_a 8 --l2 --l2_s 64 --l2_a 8 -b 64 -t ./traces
 * Caso del Caché con Presencia de L3 (habilitar L3 con "--l3" y agregar parámetros):
 1. Ejecutar el programa en terminal, siguiendo la sintáxis del comando:
 
-python3 cache_sim.py --l1_s 32 --l1_a 8 --l2 --l2_s 256 --l2_a 8 --l3 --l3_s 512 --l3_a 16 -b 64 -t ./traces/traces/400.perlbench-41B.trace.txt.gz
+python cache_sim.py --l1_s 32 --l1_a 8 --l2 --l2_s 256 --l2_a 8 --l3 --l3_s 512 --l3_a 16 -b 64 -t ./traces/traces/400.perlbench-41B.trace.txt.gz
 
 
 
